@@ -1,0 +1,144 @@
+
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+    <MenuBar GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <Menu text="File">
+            <MenuItem fx:id="FileNewGame" text="New Game"/>
+            <SeparatorMenuItem/>
+            <MenuItem fx:id="FileExit" text="Exit"/>
+        </Menu>
+        <Menu text="Settings">
+            <MenuItem fx:id="settingsPreferences" text="Preferences"/>
+            <SeparatorMenuItem/>
+            <MenuItem fx:id="cheatModeToggle" text="Cheat Mode"/>
+        </Menu>
+    </MenuBar>
+    </top>
+    <center>
+<GridPane alignment="center" hgap="10" vgap="10">
+    <Label fx:id="notifyLabel" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+    <GridPane styleClass="sidebar-section" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
+    <Label fx:id='label0' GridPane.columnIndex='0' GridPane.rowIndex='0' text = '00'/>
+    <Label fx:id='label1' GridPane.columnIndex='1' GridPane.rowIndex='0' text = '01'/>
+    <Label fx:id='label2' GridPane.columnIndex='2' GridPane.rowIndex='0' text = '02'/>
+    <Label fx:id='label3' GridPane.columnIndex='3' GridPane.rowIndex='0' text = '03'/>
+    <Label fx:id='label4' GridPane.columnIndex='4' GridPane.rowIndex='0' text = '04'/>
+    <Label fx:id='label5' GridPane.columnIndex='5' GridPane.rowIndex='0' text = '05'/>
+    <Label fx:id='label6' GridPane.columnIndex='6' GridPane.rowIndex='0' text = '06'/>
+    <Label fx:id='label7' GridPane.columnIndex='7' GridPane.rowIndex='0' text = '07'/>
+    <Label fx:id='label8' GridPane.columnIndex='8' GridPane.rowIndex='0' text = '08'/>
+    <Label fx:id='label9' GridPane.columnIndex='9' GridPane.rowIndex='0' text = '09'/>
+    <Label fx:id='label10' GridPane.columnIndex='0' GridPane.rowIndex='1' text = '10'/>
+    <Label fx:id='label11' GridPane.columnIndex='1' GridPane.rowIndex='1' text = '11'/>
+    <Label fx:id='label12' GridPane.columnIndex='2' GridPane.rowIndex='1' text = '12'/>
+    <Label fx:id='label13' GridPane.columnIndex='3' GridPane.rowIndex='1' text = '13'/>
+    <Label fx:id='label14' GridPane.columnIndex='4' GridPane.rowIndex='1' text = '14'/>
+    <Label fx:id='label15' GridPane.columnIndex='5' GridPane.rowIndex='1' text = '15'/>
+    <Label fx:id='label16' GridPane.columnIndex='6' GridPane.rowIndex='1' text = '16'/>
+    <Label fx:id='label17' GridPane.columnIndex='7' GridPane.rowIndex='1' text = '17'/>
+    <Label fx:id='label18' GridPane.columnIndex='8' GridPane.rowIndex='1' text = '18'/>
+    <Label fx:id='label19' GridPane.columnIndex='9' GridPane.rowIndex='1' text = '19'/>
+    <Label fx:id='label20' GridPane.columnIndex='0' GridPane.rowIndex='2' text = '20'/>
+    <Label fx:id='label21' GridPane.columnIndex='1' GridPane.rowIndex='2' text = '21'/>
+    <Label fx:id='label22' GridPane.columnIndex='2' GridPane.rowIndex='2' text = '22'/>
+    <Label fx:id='label23' GridPane.columnIndex='3' GridPane.rowIndex='2' text = '23'/>
+    <Label fx:id='label24' GridPane.columnIndex='4' GridPane.rowIndex='2' text = '24'/>
+    <Label fx:id='label25' GridPane.columnIndex='5' GridPane.rowIndex='2' text = '25'/>
+    <Label fx:id='label26' GridPane.columnIndex='6' GridPane.rowIndex='2' text = '26'/>
+    <Label fx:id='label27' GridPane.columnIndex='7' GridPane.rowIndex='2' text = '27'/>
+    <Label fx:id='label28' GridPane.columnIndex='8' GridPane.rowIndex='2' text = '28'/>
+    <Label fx:id='label29' GridPane.columnIndex='9' GridPane.rowIndex='2' text = '29'/>
+    <Label fx:id='label30' GridPane.columnIndex='0' GridPane.rowIndex='3' text = '30'/>
+    <Label fx:id='label31' GridPane.columnIndex='1' GridPane.rowIndex='3' text = '31'/>
+    <Label fx:id='label32' GridPane.columnIndex='2' GridPane.rowIndex='3' text = '32'/>
+    <Label fx:id='label33' GridPane.columnIndex='3' GridPane.rowIndex='3' text = '33'/>
+    <Label fx:id='label34' GridPane.columnIndex='4' GridPane.rowIndex='3' text = '34'/>
+    <Label fx:id='label35' GridPane.columnIndex='5' GridPane.rowIndex='3' text = '35'/>
+    <Label fx:id='label36' GridPane.columnIndex='6' GridPane.rowIndex='3' text = '36'/>
+    <Label fx:id='label37' GridPane.columnIndex='7' GridPane.rowIndex='3' text = '37'/>
+    <Label fx:id='label38' GridPane.columnIndex='8' GridPane.rowIndex='3' text = '38'/>
+    <Label fx:id='label39' GridPane.columnIndex='9' GridPane.rowIndex='3' text = '39'/>
+    <Label fx:id='label40' GridPane.columnIndex='0' GridPane.rowIndex='4' text = '40'/>
+    <Label fx:id='label41' GridPane.columnIndex='1' GridPane.rowIndex='4' text = '41'/>
+    <Label fx:id='label42' GridPane.columnIndex='2' GridPane.rowIndex='4' text = '42'/>
+    <Label fx:id='label43' GridPane.columnIndex='3' GridPane.rowIndex='4' text = '43'/>
+    <Label fx:id='label44' GridPane.columnIndex='4' GridPane.rowIndex='4' text = '44'/>
+    <Label fx:id='label45' GridPane.columnIndex='5' GridPane.rowIndex='4' text = '45'/>
+    <Label fx:id='label46' GridPane.columnIndex='6' GridPane.rowIndex='4' text = '46'/>
+    <Label fx:id='label47' GridPane.columnIndex='7' GridPane.rowIndex='4' text = '47'/>
+    <Label fx:id='label48' GridPane.columnIndex='8' GridPane.rowIndex='4' text = '48'/>
+    <Label fx:id='label49' GridPane.columnIndex='9' GridPane.rowIndex='4' text = '49'/>
+    <Label fx:id='label50' GridPane.columnIndex='0' GridPane.rowIndex='5' text = '50'/>
+    <Label fx:id='label51' GridPane.columnIndex='1' GridPane.rowIndex='5' text = '51'/>
+    <Label fx:id='label52' GridPane.columnIndex='2' GridPane.rowIndex='5' text = '52'/>
+    <Label fx:id='label53' GridPane.columnIndex='3' GridPane.rowIndex='5' text = '53'/>
+    <Label fx:id='label54' GridPane.columnIndex='4' GridPane.rowIndex='5' text = '54'/>
+    <Label fx:id='label55' GridPane.columnIndex='5' GridPane.rowIndex='5' text = '55'/>
+    <Label fx:id='label56' GridPane.columnIndex='6' GridPane.rowIndex='5' text = '56'/>
+    <Label fx:id='label57' GridPane.columnIndex='7' GridPane.rowIndex='5' text = '57'/>
+    <Label fx:id='label58' GridPane.columnIndex='8' GridPane.rowIndex='5' text = '58'/>
+    <Label fx:id='label59' GridPane.columnIndex='9' GridPane.rowIndex='5' text = '59'/>
+    <Label fx:id='label60' GridPane.columnIndex='0' GridPane.rowIndex='6' text = '60'/>
+    <Label fx:id='label61' GridPane.columnIndex='1' GridPane.rowIndex='6' text = '61'/>
+    <Label fx:id='label62' GridPane.columnIndex='2' GridPane.rowIndex='6' text = '62'/>
+    <Label fx:id='label63' GridPane.columnIndex='3' GridPane.rowIndex='6' text = '63'/>
+    <Label fx:id='label64' GridPane.columnIndex='4' GridPane.rowIndex='6' text = '64'/>
+    <Label fx:id='label65' GridPane.columnIndex='5' GridPane.rowIndex='6' text = '65'/>
+    <Label fx:id='label66' GridPane.columnIndex='6' GridPane.rowIndex='6' text = '66'/>
+    <Label fx:id='label67' GridPane.columnIndex='7' GridPane.rowIndex='6' text = '67'/>
+    <Label fx:id='label68' GridPane.columnIndex='8' GridPane.rowIndex='6' text = '68'/>
+    <Label fx:id='label69' GridPane.columnIndex='9' GridPane.rowIndex='6' text = '69'/>
+    <Label fx:id='label70' GridPane.columnIndex='0' GridPane.rowIndex='7' text = '70'/>
+    <Label fx:id='label71' GridPane.columnIndex='1' GridPane.rowIndex='7' text = '71'/>
+    <Label fx:id='label72' GridPane.columnIndex='2' GridPane.rowIndex='7' text = '72'/>
+    <Label fx:id='label73' GridPane.columnIndex='3' GridPane.rowIndex='7' text = '73'/>
+    <Label fx:id='label74' GridPane.columnIndex='4' GridPane.rowIndex='7' text = '74'/>
+    <Label fx:id='label75' GridPane.columnIndex='5' GridPane.rowIndex='7' text = '75'/>
+    <Label fx:id='label76' GridPane.columnIndex='6' GridPane.rowIndex='7' text = '76'/>
+    <Label fx:id='label77' GridPane.columnIndex='7' GridPane.rowIndex='7' text = '77'/>
+    <Label fx:id='label78' GridPane.columnIndex='8' GridPane.rowIndex='7' text = '78'/>
+    <Label fx:id='label79' GridPane.columnIndex='9' GridPane.rowIndex='7' text = '79'/>
+    <Label fx:id='label80' GridPane.columnIndex='0' GridPane.rowIndex='8' text = '80'/>
+    <Label fx:id='label81' GridPane.columnIndex='1' GridPane.rowIndex='8' text = '81'/>
+    <Label fx:id='label82' GridPane.columnIndex='2' GridPane.rowIndex='8' text = '82'/>
+    <Label fx:id='label83' GridPane.columnIndex='3' GridPane.rowIndex='8' text = '83'/>
+    <Label fx:id='label84' GridPane.columnIndex='4' GridPane.rowIndex='8' text = '84'/>
+    <Label fx:id='label85' GridPane.columnIndex='5' GridPane.rowIndex='8' text = '85'/>
+    <Label fx:id='label86' GridPane.columnIndex='6' GridPane.rowIndex='8' text = '86'/>
+    <Label fx:id='label87' GridPane.columnIndex='7' GridPane.rowIndex='8' text = '87'/>
+    <Label fx:id='label88' GridPane.columnIndex='8' GridPane.rowIndex='8' text = '88'/>
+    <Label fx:id='label89' GridPane.columnIndex='9' GridPane.rowIndex='8' text = '89'/>
+    <Label fx:id='label90' GridPane.columnIndex='0' GridPane.rowIndex='9' text = '90'/>
+    <Label fx:id='label91' GridPane.columnIndex='1' GridPane.rowIndex='9' text = '91'/>
+    <Label fx:id='label92' GridPane.columnIndex='2' GridPane.rowIndex='9' text = '92'/>
+    <Label fx:id='label93' GridPane.columnIndex='3' GridPane.rowIndex='9' text = '93'/>
+    <Label fx:id='label94' GridPane.columnIndex='4' GridPane.rowIndex='9' text = '94'/>
+    <Label fx:id='label95' GridPane.columnIndex='5' GridPane.rowIndex='9' text = '95'/>
+    <Label fx:id='label96' GridPane.columnIndex='6' GridPane.rowIndex='9' text = '96'/>
+    <Label fx:id='label97' GridPane.columnIndex='7' GridPane.rowIndex='9' text = '97'/>
+    <Label fx:id='label98' GridPane.columnIndex='8' GridPane.rowIndex='9' text = '98'/>
+    <Label fx:id='label99' GridPane.columnIndex='9' GridPane.rowIndex='9' text = '99'/>
+    </GridPane>
+    <Label fx:id="guessPromptLabel" GridPane.columnIndex="0" GridPane.rowIndex="3" text="Enter Your Guess:"/>
+    <Label fx:id="remainingLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" text="6 Remaining"/>
+    <TextField fx:id="textfield" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2">
+
+    </TextField>
+    <Button fx:id="buttonGuess" text="Guess" styleClass="button" defaultButton="true" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"
+    onAction="#onButtonClick"/>
+    <Button fx:id="buttonNewGame" text="New Game" visible="false" styleClass="button"  GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"
+            onAction="#reset"/>
+</GridPane>
+    </center></BorderPane>

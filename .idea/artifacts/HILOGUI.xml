@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="HILOGUI">
+    <output-path>$PROJECT_DIR$/out/artifacts/HILOGUI</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="Number Guessing Game Built in JavaFX&#13;&#10;Author: Brian Chalfant" />
+        <option name="height" value="500" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Number Guessing Game" />
+        <option name="vendor" value="" />
+        <option name="version" value="1.00" />
+        <option name="width" value="300" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="HILOGUI.jar">
+        <element id="module-output" name="HILOGUI" />
+      </element>
+    </root>
+  </artifact>
+</component>

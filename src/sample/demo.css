@@ -1,0 +1,75 @@
+.root {
+
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: dimgray;
+}
+.button{
+    -fx-border-radius: 10px;
+    -fx-pref-width: 200px;
+    -fx-border-color: aqua;
+}
+
+.sidebar-section {
+    -fx-border-color: white;
+    -fx-background-color: gray;
+    -fx-border-width: 7;
+    -fx-border-radius: 5%;
+
+}
+.sidebar-section Label {
+    -fx-font-family: "Lucida Sans Typewriter", Monospaced;
+    -fx-font-size: 12px;
+    -fx-padding: 5 5 5 5;
+}
+
+
+.menu-bar {
+    -fx-opacity: 0.7;
+    -fx-border-width: 2.0;
+
+}
+/* File and Settings Labels*/
+.menu-bar .label {
+    -fx-border-radius: 50%;
+    -fx-font-size: 12.0 pt;
+    -fx-font-family: "Lucida Sans";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-padding: 1px;
+
+}
+/* Hovering over File and Settings */
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    /*-fx-background: dim gray ;*/
+    /*-fx-opacity: 0.5;*/
+    -fx-background-color: dimgray;
+    -fx-text-fill: white;
+
+}
+/* Menu Items New Game Preferences etc.*/
+.menu-item {
+    -fx-border-width: 10px;
+}
+/* Menu Item Text */
+.menu-item .label{
+    /*-fx-background-color: dim gray;*/
+    -fx-font-size: 10.0 pt;
+    -fx-text-fill: dimgray;
+    -fx-pref-width: 120px;
+}
+.menu-item:hover {
+    -fx-text-fill: white;
+
+}
+#FileExit #FileNewGame #settingsPreferences #cheatModeToggle {
+    -fx-background-color: dimgray;
+}
+#notifyLabel {
+    -fx-font-size: 32.0 pt;
+    -fx-text-fill: aqua;
+    -fx-alignment: CENTER;
+    -fx-border-radius: 6px;
+}
+
+
