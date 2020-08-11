@@ -1,11 +1,17 @@
 package sample;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
 
 import javax.swing.*;
 import java.util.ArrayList;
 
 public class Controller {
+    boolean cheatMode = false;
+    @FXML
+    public GridPane arraycontainer;
     @FXML
     private Button buttonNewGame;
     @FXML
@@ -243,6 +249,23 @@ public class Controller {
 
         FileExit.setOnAction(event -> System.exit(0));
         cheatModeToggle.setOnAction(event -> myLabel.get(magicNumber).setStyle("-fx-background-color: green;"));
+        cheatModeToggle.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                if(cheatMode){
+                    myLabel.get(magicNumber).setStyle("-fx-background-color: inherit;");
+                } else {
+                    myLabel.get(magicNumber).setStyle("-fx-background-color: green");
+                }
+                cheatMode = !cheatMode;
+
+
+            }
+        });
+        {
+
+
+        }
         settingsPreferences.setOnAction(event -> setGuesses());
     }
 
@@ -250,31 +273,30 @@ public class Controller {
     @FXML
     public void onButtonClick() {
         int user_input = Integer.parseInt(textfield.getText());
-        System.out.println("user_input: " + user_input);
-        System.out.println("Size: " + myLabel.size());
-        if (user_input > magicNumber) {
-            System.out.println("Greater Than");
-            for (int i = user_input; i < myLabel.size(); i++) {
-                System.out.println(i);
-                Label Labelx = myLabel.get(i);
-                Labelx.setStyle("-fx-background-color: salmon;");
-            }
-        } else if (user_input < magicNumber) {
-            System.out.println("Less Than");
-            for (int i = user_input; i >= 0; i--) {
-                Label Labelx = myLabel.get(i);
-                System.out.println("myLabel:" + myLabel.get(i).getText());
-                Labelx.setStyle("-fx-background-color: salmon;");
-
-            }
-        } else {
-            notifyLabel.setText("You Win");
-            endGame(magicNumber);
-        }
-        if ((guessesRemaining -1) == 0) {
+        if (guessesRemaining == 1 && user_input != magicNumber) {
             notifyLabel.setText("You Lose");
             endGame(magicNumber);
         } else{
+            if (user_input == magicNumber) {
+                notifyLabel.setText("You Win");
+                endGame(magicNumber);
+            } else if (user_input > magicNumber) {
+                System.out.println("Greater Than");
+                for (int i = user_input; i < myLabel.size(); i++) {
+                    System.out.println(i);
+                    Label Labelx = myLabel.get(i);
+                    Labelx.setStyle("-fx-background-color: salmon;");
+                }
+            } else {
+                System.out.println("Less Than");
+                for (int i = user_input; i >= 0; i--) {
+                    Label Labelx = myLabel.get(i);
+                    System.out.println("myLabel:" + myLabel.get(i).getText());
+                    Labelx.setStyle("-fx-background-color: salmon;");
+
+                }
+        }
+
             guessesRemaining--;
             textfield.clear();
             remainingLabel.setText(guessesRemaining + " Remaining");
@@ -317,11 +339,23 @@ public class Controller {
 
     }
     public void setGuesses(){
-        Controller.guesses = Integer.parseInt(JOptionPane.showInputDialog("How Many Guesses do you want?: "));
+       int userRequest = Integer.parseInt(JOptionPane.showInputDialog("How Many Guesses do you want?: "));
+        if (userRequest < 100){
+            Controller.guesses = userRequest;
+            remainingLabel.setText(guesses + " Remaining");
+        }else {
+            //JOptionPane.showMessageDialog(null,"Error","Error",2);
+            Alert alert = new Alert(Alert.AlertType.WARNING, "That's way too many guesses!  there's only 100 numbers");
+            alert.showAndWait();
+        }
     }
 
     public int randomizeMagicNumber(){
-        return ((int) (Math.random() * 99));
+        int magicNumber = ((int) (Math.random() * (99 + 1)));
+        if(cheatMode){
+            myLabel.get(magicNumber).setStyle("-fx-background-color: green;");
+        }
+        return magicNumber;
     }
 
 }

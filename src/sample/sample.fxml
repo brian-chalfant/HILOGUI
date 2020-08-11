@@ -27,7 +27,7 @@
     </MenuBar>
     </top>
     <center>
-<GridPane alignment="center" hgap="10" vgap="10">
+<GridPane fx:id="arraycontainer" alignment="center" hgap="10" vgap="10">
     <Label fx:id="notifyLabel" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
     <GridPane styleClass="sidebar-section" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2">
     <Label fx:id='label0' GridPane.columnIndex='0' GridPane.rowIndex='0' text = '00'/>

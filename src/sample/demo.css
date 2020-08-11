@@ -2,7 +2,7 @@
 
     -fx-font-size: 14px;
     -fx-font-family: sans-serif;
-    -fx-background-color: dimgray;
+    -fx-background-color: linear-gradient(to bottom right, #1ecbe1, #51d7e8, #d3f5f9);
 }
 .button{
     -fx-border-radius: 10px;
@@ -12,12 +12,14 @@
 
 .sidebar-section {
     -fx-border-color: white;
-    -fx-background-color: gray;
+    -fx-background-color: linear-gradient(to left, gray, silver);
     -fx-border-width: 7;
+    -fx-background-radius: 7%;
     -fx-border-radius: 5%;
 
 }
 .sidebar-section Label {
+    -fx-font-weight: bold;
     -fx-font-family: "Lucida Sans Typewriter", Monospaced;
     -fx-font-size: 12px;
     -fx-padding: 5 5 5 5;
@@ -66,6 +68,8 @@
     -fx-background-color: dimgray;
 }
 #notifyLabel {
+    -fx-background-color: dimgray;
+    -fx-pref-width: 250px;
     -fx-font-size: 32.0 pt;
     -fx-text-fill: aqua;
     -fx-alignment: CENTER;
